@@ -29,22 +29,24 @@ public class ThreeDigitSumCalculator {
 
     public static void main(String[] args) {
         ThreeDigitSumCalculator digitSum = new ThreeDigitSumCalculator();
-        if (digitSum.readInputNumber()) {
+        digitSum.readInputNumber();
+        
+        if (digitSum.validateIfNumberHasThreeDigits()) {
             digitSum.splitNumberDigits();
             digitSum.sumNumberDigits();
-            digitSum.showResult();
-        } else {
-            digitSum.showErrorMessage();
         }
 
+        digitSum.printResponse();
     }
 
-    private boolean readInputNumber() {
+    private void readInputNumber() {
         Scanner scanner = new Scanner(System.in);
-        String message = "Ingresa un número entero de tres cifras:";
-        this.print(message);
+        System.out.println("Ingresa un número entero de tres cifras: ");
         this.number = scanner.nextInt();
-        return (100 <= this.number && this.number < 1000);
+    }
+
+    private boolean validateIfNumberHasThreeDigits() {
+        return Integer.toString(this.number).length() == 3;
     }
 
     private void splitNumberDigits() {
@@ -57,20 +59,17 @@ public class ThreeDigitSumCalculator {
         this.sum = this.firstDigit + this.secondDigit + this.thirdDigit;
     }
 
-    private void showResult() {
-        String message = "La suma de ";
-        message += this.firstDigit + " + ";
-        message += this.secondDigit + " + ";
-        message += this.thirdDigit + " = " + this.sum;
-        this.print(message);
-    }
+    private void printResponse() {
+        boolean numberHasThreeDigits = this.validateIfNumberHasThreeDigits();
+        String message = numberHasThreeDigits
+                ? "La suma de %d + %d + %d = %d%n"
+                : "El número \"%d\" no tiene tres cifras.%n";
 
-    private void print(String message) {
-        System.out.println(message);
-    }
 
-    private void showErrorMessage() {
-        String errorMessage = "El número \"" + this.number + "\" no tiene tres cifras.";
-        this.print(errorMessage);
+        Object[] args = numberHasThreeDigits
+                ? new Object[]{this.firstDigit, this.secondDigit, this.thirdDigit, this.sum}
+                : new Object[]{this.number};
+
+        System.out.printf(message, args);
     }
 }
