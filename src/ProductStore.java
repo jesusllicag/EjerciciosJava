@@ -1,15 +1,16 @@
-import java.util.Calendar;
 import java.util.Scanner;
-import java.util.function.Function;
 
-/*
- *  Semana 3 Sesion 1 | Ejercicio 3
- *      Una tienda acepta cambio de productos en los siguientes casos:
- *      - si el producto tiene un precio entre 50 y 80 soles y fue comprado el día lunes (día 1)
- *      - si el producto tiene un precio no por debajo de 120 soles y fue comprado cualquier
- *      día, excepto miércoles o jueves (días 3 o 4, respectivamente).
- *      Evaluar si procede o no el cambio del producto.
- *      Las variables leídas son precioProducto y numeroDia.
+/**
+ *  Semana 3 Sesion 1
+ *  Ejercicio 3
+ *  Una tienda acepta cambio de productos en los siguientes casos:
+ *  - si el producto tiene un precio entre 50 y 80 soles y fue comprado el día lunes (día 1)
+ *  - si el producto tiene un precio no por debajo de 120 soles y fue comprado cualquier
+ *    día, excepto miércoles o jueves (días 3 o 4, respectivamente).
+ *  Evaluar si procede o no el cambio del producto.
+ *  Las variables leídas son precioProducto y numeroDia.
+ *
+ * @author mizterfrek | Jesus. Llica Garcia
  */
 public class ProductStore {
 

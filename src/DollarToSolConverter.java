@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-/*
+/**
  * Semana 1 - Sesion 2
  * Ejercicio 3
  * Implementar un programa en Java que permita convertir dólares a soles
@@ -14,14 +14,14 @@ public class DollarToSolConverter {
         Scanner scanner = new Scanner(System.in);
 
         // Captura de datos
-        System.out.print("Ingrese el monto en dolares ($)");
+        System.out.print("Ingrese el monto en dolares ($): ");
         float dollar = scanner.nextFloat();
 
         // Calculo
         float sol = dollar * EXCHANGE_RATE;
 
         // Impresion de resultado
-        System.out.printf("%.2f dolares equivale a %.2f soles: ", dollar, sol);
+        System.out.printf("%.2f dolares equivale a %.2f soles: %n", dollar, sol);
     }
 
 }

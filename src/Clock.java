@@ -1,13 +1,14 @@
 import java.util.Scanner;
 
-/*
+/**
  *  Semana 3 Sesion 2
  *  Ejercicio 2
  *  Escribir un programa en Java que lea las horas, minutos y
  *  segundos individualmente, y calcule qué hora sería en el
  *  siguiente segundo.
- *
  *  Validar los valores ingresados de las horas (0-23), minutos (0-59) y segundos (0-59).
+ *
+ *  @author mizterfrek | Jesus. Llica Garcia
  */
 public class Clock {
     public static void main(String[] args) {

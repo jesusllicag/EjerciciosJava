@@ -1,12 +1,10 @@
 import java.util.Scanner;
 
-/*
+/**
  * Semana 3 Sesion 2
  * Ejercicio 1
- *
  * El gobierno ha decretado un aumento en los salarios de los altos
  * funcionarios de acuerdo con la siguiente escala:
- *
  * |-------------------------------------------|
  * | Sexo     | Salud | Educación | Transporte |
  * |----------|-------|-----------|------------|
@@ -17,9 +15,10 @@ import java.util.Scanner;
  * - Salud: S/. 15000
  * - Educación: S/. 12000
  * - Transporte: S/. 18000
- *
  * Escribir un programa en Java que solicite el sexo y sector de un
  * funcionario y calcule el monto que recibirá luego de aplicado el aumento.
+ *
+ * @author mizterfrek | Jesus. Llica Garcia
  */
 public class SalaryRise {
 
