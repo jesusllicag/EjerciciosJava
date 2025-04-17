@@ -5,6 +5,8 @@ import java.util.Scanner;
  * Ejercicio 3
  * Implementar un programa en Java que permita convertir dólares a soles
  * (tipo de cambio: 3.72)
+ *
+ * @author mizterfrek | Jesus. Llica Garcia
  */
 public class CircleAreaCalculator {
     public static double PI = Math.PI;
