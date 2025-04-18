@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /**
- * Ejercicio 1 Semana 2:
+ * Semana 2 - Sesion 2 - Ejercicio 1:
  *   • Escribe un programa que calcule la distancia que recorre la luz en N días,
  *     sabiendo que en un segundo la luz viaja a 299792458 m/s.
  *   • Leer el número de días utilizando la clase Scanner.

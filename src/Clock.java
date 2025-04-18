@@ -48,6 +48,6 @@ public class Clock {
         }
 
         // Impresion de resultado
-        System.out.printf("%02d:%02d:%02d\n", horas, minutos, segundos);
+        System.out.printf("La nueva hora es: %02d:%02d:%02d\n", horas, minutos, segundos);
     }
 }

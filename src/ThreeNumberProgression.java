@@ -1,8 +1,7 @@
 import java.util.Scanner;
 
 /**
- *  Semana 3 Sesion 1
- *  Ejercicio 1
+ *  Semana 3 - Sesion 1 - Ejercicio 13
  *  Se requiere saber si 3 números enteros ingresados se encuentran o no en
  *  progresión aritmética. Las variables leídas son: n1, n2 y n3.
  *
