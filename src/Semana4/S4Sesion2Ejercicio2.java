@@ -2,6 +2,9 @@ package Semana4;
 
 import java.util.Scanner;
 
+/**
+ * @author mizterfrek | Jesus. Llica Garcia
+ */
 public class S4Sesion2Ejercicio2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
